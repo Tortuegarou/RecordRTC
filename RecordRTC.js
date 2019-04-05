@@ -1,6 +1,6 @@
 'use strict';
 
-// Last time updated: 2019-04-04 2:58:41 PM UTC
+// Last time updated: 2019-04-05 2:40:52 PM UTC
 
 // ________________
 // RecordRTC v5.5.4
@@ -2887,7 +2887,7 @@ function StereoAudioRecorder(mediaStream, config) {
         RecordRTC.Storage.AudioContextConstructor = new RecordRTC.Storage.AudioContext();
     }
 
-    var context = Storage.AudioContextConstructor;
+    var context = RecordRTC.Storage.AudioContextConstructor;
 
     // creates an audio node from the microphone incoming stream
     var audioInput = context.createMediaStreamSource(mediaStream);
